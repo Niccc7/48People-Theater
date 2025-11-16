@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#dff1ff, #a7c9ff);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #002244;
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.shows-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  animation: fadeIn 1.4s ease;
+}
+
+.show-card {
+  width: 150px;
+  height: 150px;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.show-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.pricing-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  background: #ffffff;
+  width: 200px;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* CTA Buttons */
+.cta-container {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeIn 1.6s ease;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #0055ff;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 10px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #003fcc;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #003f7f;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+a {
+  color: #003f7f;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header {
+    font-size: 24px;
+  }
+  .price-card {
+    width: 160px;
+  }
+  .show-card {
+    width: 130px;
+    height: 200px;
+  }
+  .cta-btn {
+    width: 80%;
+    display: block;
+  }
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #003f7f;
+}
