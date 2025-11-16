@@ -151,16 +151,26 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(6px);
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  border-bottom: 2px solid rgba(0, 60, 130, 0.2); 
 }
 
 .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 24px;
   font-weight: bold;
   color: #003f7f;
+}
+
+.nav-logo-img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
 }
